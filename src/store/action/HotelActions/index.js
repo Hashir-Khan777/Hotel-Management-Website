@@ -71,4 +71,34 @@ const GetHotels = () => (dispatch) => {
   }
 };
 
-export { CreateHotel, GetHotels };
+const GetHotelById = (id) => (dispatch) => {
+  dispatch({
+    type: "GET_HOTEL_DETAIL_REQUEST",
+  });
+  try {
+    firebase
+      .firestore()
+      .collection("Hotels")
+      .doc(id)
+      .get()
+      .then((data) => {
+        dispatch({
+          type: "GET_HOTEL_DETAIL_SUCCESS",
+          payload: data.data(),
+        });
+      })
+      .catch((err) => {
+        dispatch({
+          type: "GET_HOTEL_DETAIL_FAIL",
+          payload: err.message,
+        });
+      });
+  } catch (err) {
+    dispatch({
+      type: "GET_HOTEL_DETAIL_FAIL",
+      payload: err.message,
+    });
+  }
+};
+
+export { CreateHotel, GetHotels, GetHotelById };

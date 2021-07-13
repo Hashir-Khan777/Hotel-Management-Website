@@ -1,5 +1,6 @@
 const INITIAL_STATE = {
   Hotels: [],
+  HotelDetail: null,
 };
 
 export const HotelReducer = (state = INITIAL_STATE, action) => {
@@ -38,6 +39,23 @@ export const HotelReducer = (state = INITIAL_STATE, action) => {
       };
 
     case "GET_HOTEL_FAIL":
+      return {
+        loading: false,
+        error: action.payload,
+      };
+
+    case "GET_HOTEL_DETAIL_REQUEST":
+      return {
+        loading: true,
+      };
+
+    case "GET_HOTEL_DETAIL_SUCCESS":
+      return {
+        loading: false,
+        HotelDetail: action.payload,
+      };
+
+    case "GET_HOTEL_DETAIL_FAIL":
       return {
         loading: false,
         error: action.payload,
