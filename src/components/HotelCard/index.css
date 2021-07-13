@@ -1,0 +1,38 @@
+.card {
+  position: relative;
+  width: 18rem;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 20rem;
+}
+
+.card_image {
+  width: 100%;
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.card_text {
+  margin: 10px 0;
+}
+
+.card_button {
+  align-self: flex-end;
+  color: #fff;
+  background-color: rgba(13, 110, 253, 0.7);
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card_button:hover {
+  background-color: rgba(13, 110, 253, 1);
+}

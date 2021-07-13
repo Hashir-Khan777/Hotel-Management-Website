@@ -1,0 +1,93 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.login_form {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin: 20px 0;
+}
+
+.form {
+  width: 40vw;
+}
+
+.input_section {
+  margin: 10px 0;
+}
+
+.input_section input,
+textarea {
+  border: none;
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 10px;
+  font-size: 17px;
+  resize: vertical;
+  border-radius: 5px;
+}
+
+.input_section label {
+  font-weight: bold;
+}
+
+.button {
+  background: none;
+  border: none;
+  color: #fff;
+  background-color: rgba(13, 110, 253, 0.7);
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgba(13, 110, 253, 1);
+}
+
+.error {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #ffe0e0;
+  color: #a02020;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.loading {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  font-size: 50px;
+  animation: spin infinite 2s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,22 @@
+.admin {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.admin_content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  width: 100%;
+  height: auto;
+  color: #20a020;
+  background-color: #e0ffe0;
+  padding: 10px;
+  border-radius: 4px;
+}

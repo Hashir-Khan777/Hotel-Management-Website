@@ -1,0 +1,59 @@
+.navbar_fixed {
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  z-index: 99999;
+  padding: 10px 50px;
+}
+
+.navbar_relative {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  z-index: 99999;
+  padding: 10px 50px;
+}
+
+.container_fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bgColor {
+  background-color: #0d6efd;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.container_fluid {
+  width: 100%;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+}
+
+.nav_link > a {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav_button {
+  background: none;
+  border: none;
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}

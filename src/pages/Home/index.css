@@ -1,0 +1,16 @@
+.all_hotels {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main_heading {
+  margin: 20px 20px 0;
+}
+
+.hotel_management_wedsite {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
